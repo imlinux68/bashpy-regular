@@ -1,7 +1,16 @@
 #!/bin/bash
 
 function sixlisting(){
-
+    lst=()
+    for ((i=1; i<=6; i++))
+        do
+            read -p "Enter a sum to array: " sum_array
+            lst+=("$sum_array")
+        done
+    echo "this is yur array: ${lst[@]}"
+    echo "Your list was cleared"
+    unset lst[@]
+    echo "${lst[@]}"
 }
 
 sixlisting

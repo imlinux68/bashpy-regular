@@ -1,7 +1,12 @@
 #!/bin/python
 
 def sixstore():
-    
-
-
+    lst = []
+    for i in range(6):
+        lst.append(int(input("Enter 6 nums: ")))
+    print("This is the list")
+    print(lst)
+    print("We have deleted a users list")
+    lst.clear()
+    print(lst)
 sixstore()
